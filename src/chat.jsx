@@ -21,7 +21,7 @@ const Chat = () => {
   // ✅ Fetch old messages from MongoDB
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/messages")
+      .get("https://vite-project-alpha-liard.vercel.app//api/messages")
       .then((res) => setMessages(res.data))
       .catch((err) => console.error(err));
   }, []);
